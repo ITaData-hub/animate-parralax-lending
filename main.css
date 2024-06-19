@@ -1,0 +1,315 @@
+/* html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+html{height:100%}
+body{line-height:1}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+table{border-collapse:collapse;border-spacing:0} */
+
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 180vh;
+    background-color: #0e0e0f;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.scene-1, .scene-2, .scroll-tile{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+
+.parallax, .abs{
+    position: absolute;
+    object-fit: fill;
+    pointer-events: none;
+    transition: 0.45s cubic-bezier(0.02, 0, 0.24, 0.99);
+}
+.scene-1 .text{
+    top:calc(50% + 9.25%);
+    left:calc(50% - 0px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+.arrow{
+    width: 31%;
+    height: auto;
+}
+.arrow *{
+    stroke: #ffffffd0;
+}
+
+h1{
+    font-size: 10rem;
+    color: #ffffffd0;
+    text-align: center;
+    font-family: "Alike Angular", serif;  
+    font-weight: 800;  
+    font-style: normal; 
+    line-height: 10rem;
+
+}
+
+.scene-1 .bg-space{
+    width: 119.79%;
+    height: 139%;
+    top:calc(50% - 55.5%);
+    left:calc(50% + 0.52%);
+    transition: none;
+}
+
+.scene-1 .bg-graund{
+    top:calc(50% - 20%);
+    left:calc(50% + 0px);
+    width: 119.79%;
+    height: 140%;
+    transition: none;
+}
+
+.scene-1 .C-planet{
+    top:calc(50% - 2.12%);
+    left:calc(50% - 1.09%);
+}
+.scene-1 .C-mountain{
+    top:calc(50% + 4.81%);
+    left:calc(50% - 4.89%);
+}
+.scene-1 .L-mini-planet{
+    top:calc(50% - 7.96%);
+    left:calc(50% - 13.43%);
+}
+
+.scene-1 .L-mountain2{
+    top:calc(50% + 2.4%);
+    left:calc(50% - 19.6%);
+}
+.scene-1 .C-blur-smook{
+    top:calc(50% + 14.8%);
+    left:calc(50% - 0px);
+}
+.scene-1 .L-mountain1{
+    top:calc(50% - 3.52%);
+    left:calc(50% - 26.8%);
+}
+.scene-1 .L-planet{
+    top:calc(50% - 25.8%);
+    left:calc(50% - 20.8%);
+}
+.scene-1 .R-big-planet{
+    top:calc(50% - 21.57%);
+    left:calc(50% + 27.29%);
+}
+
+.scene-1 .L-mini-hill{
+    top:calc(50% + 20.6%);
+    left:calc(50% - 18.02%);
+}
+.scene-1 .R-mini-mountain2{
+    top:calc(50% - 0px);
+    left:calc(50% + 46.92%);
+}
+
+.scene-1 .R-mini-mountain1{
+    top:calc(50% - 3.89%);
+    left:calc(50% + 39.7%);
+}
+
+
+.scene-1 .R-mountain{
+    top:calc(50% - 6.11%);
+    left:calc(50% + 22.6%);
+}
+
+.scene-1 .R-hill{
+    top:calc(50% + 19.44%);
+    left:calc(50% + 16.15%);
+}
+.scene-1 .R-hill-smook{
+    top:calc(50% + 17.96%);
+    left:calc(50% + 26.2%);
+}
+
+.scene-1 .R-pink-hill-smook{
+    top:calc(50% + 8.33%);
+    left:calc(50% + 23.59%);
+}
+.scene-1 .R-pink-smook{
+    top:calc(50% + 23.33%);
+    left:calc(50% - 28.91%);
+}
+
+.scene-1 .R-blik{
+    top:calc(50% - 51.94%);
+    left:calc(50% + 29.42%);
+}
+
+.scene-1 .R-mini-hill{
+    top:calc(50% + 20%);
+    left:calc(50% + 29.63%);
+}
+
+
+.scene-1 .L-trees{
+    top:calc(50% + 19.91%);
+    left:calc(50% - 34%);
+}
+
+.scene-1 .R-trees{
+    top:calc(50% + 13.24%);
+    left:calc(50% + 31.66%);
+}
+
+.scene-1 .R-bush{
+    top:calc(50% + 42.31%);
+    left:calc(50% + 40.73%);
+}
+.scene-1 .one-tree{
+    top:calc(50% - 1.02%);
+    left:calc(50% - 41%);
+    height: 100%;
+}
+
+.scene-1 .L-bush{
+    top:calc(50% + 41.31%);
+    left:calc(50% - 36.2%);
+}
+
+.scene-1 .C-pink-smoke{
+    top:calc(50% + 27.22%);
+    left:calc(50% + 2.917%);
+    width: 110%;
+
+}
+
+.scroll-tile{
+    position: absolute;
+    top:90%;
+    left:0;
+    z-index: 999;
+    height: 140%;
+    transition: none;
+    pointer-events: none;
+}
+.scroll-tile .scroll-tile-img{
+    top:calc(50% + 27.22%);
+    left:calc(50% + 13.3%);
+    width: 100%;
+}
+
+.scene-2{
+    position: absolute;
+    top:175%;
+    left:0;
+}
+.scene-2 .bg{
+    height: 139%;
+    top:calc(50% + .5%);
+    left:calc(50% + 0.52%);
+    transition: 0.45s cubic-bezier(0.02, 0, 0.24, 0.99);
+}
+
+.scene-2 .bg-ring-4{
+    top:calc(50% + .5%);
+    left:calc(50% + 0.52%);
+}
+
+
+.scene-2 .bg-ring-3{
+    top:calc(50% + .5%);
+    left:calc(50% + 0.52%);
+}
+
+.scene-2 .bg-ring-2{
+    top:calc(50% + .5%);
+    left:calc(50% + 0.52%);
+}
+
+.scene-2 .bg-ring-1{
+    top:calc(50% + .5%);
+    left:calc(50% + 0.52%);
+}
+
+
+.scene-2 .flashlight-3-light-aura{
+    top:calc(50% + 10%);
+    left:calc(50% - 15%);
+    opacity: .5;
+}
+.scene-2 .flashlight-3{
+    top:calc(50% + 23%);
+    left:calc(50% - 11%);
+}
+.scene-2 .flashlight-3-light{
+    top:calc(50% + 19%);
+    left:calc(50% - 11.5%);
+    opacity: .8;
+}
+
+
+.scene-2 .flashlight-2-light-aura{
+    top:calc(50% + 10%);
+    left:calc(50% - 33%);
+    opacity: .5;
+}
+.scene-2 .flashlight-2{
+    top:calc(50% + 30%);
+    left:calc(50% - 45%);
+}
+.scene-2 .flashlight-2-light{
+    top:calc(50% + 20%);
+    left:calc(50% - 39%);
+    opacity: .8;
+}
+
+.scene-2 .flashlight-1-light-aura{
+    top:calc(50% + 6%);
+    left:calc(50% + 20%);
+    opacity: .5;
+}
+.scene-2 .flashlight-1{
+    top:calc(50% + 26%);
+    left:calc(50% + 17%);
+}
+.scene-2 .flashlight-1-light{
+    top:calc(50% + 20%);
+    left:calc(50% + 17.3%);
+    opacity: .8;
+}
+
+.scene-2 .railway{
+    top:calc(50% + 35%);
+    left:calc(50% + 2.3%);
+}
+
+.scene-2 .text{
+    top:calc(50% + 9.25%);
+    left:calc(50% - 0px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    top:calc(50% + 5%);
+    left:calc(50% + 2.3%);
+}
+
+
+
+
