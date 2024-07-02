@@ -246,11 +246,17 @@ h1{
     left:calc(50% + 0.52%);
 }
 
+.scene-2 .light.soft-light{
+    mix-blend-mode: soft-light;
+}
+
+.scene-2 .light.hard-light{
+    mix-blend-mode: hard-light;
+}
 
 .scene-2 .flashlight-3-light-aura{
     top:calc(50% + 10%);
     left:calc(50% - 15%);
-    opacity: .5;
 }
 .scene-2 .flashlight-3{
     top:calc(50% + 23%);
@@ -259,14 +265,12 @@ h1{
 .scene-2 .flashlight-3-light{
     top:calc(50% + 19%);
     left:calc(50% - 11.5%);
-    opacity: .8;
 }
 
 
 .scene-2 .flashlight-2-light-aura{
     top:calc(50% + 10%);
     left:calc(50% - 33%);
-    opacity: .5;
 }
 .scene-2 .flashlight-2{
     top:calc(50% + 30%);
@@ -275,13 +279,11 @@ h1{
 .scene-2 .flashlight-2-light{
     top:calc(50% + 20%);
     left:calc(50% - 39%);
-    opacity: .8;
 }
 
 .scene-2 .flashlight-1-light-aura{
     top:calc(50% + 6%);
     left:calc(50% + 20%);
-    opacity: .5;
 }
 .scene-2 .flashlight-1{
     top:calc(50% + 26%);
@@ -290,7 +292,6 @@ h1{
 .scene-2 .flashlight-1-light{
     top:calc(50% + 20%);
     left:calc(50% + 17.3%);
-    opacity: .8;
 }
 
 .scene-2 .railway{
